@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow the Box - Tariff Game</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <main class="game-container">
+    <!-- Left: Component Selection Grid -->
+    <section class="component-grid">
+      <div class="component" data-component="battery">
+        <img src="assets/images/battery-icon.svg" alt="Battery" class="component-icon small" />
+        <h4>Battery</h4>
+      </div>
+      <div class="component" data-component="screen">
+        <img src="assets/images/screen-icon.svg" alt="Screen" class="component-icon small" />
+        <h4>Screen</h4>
+      </div>
+      <div class="component" data-component="frame">
+        <img src="assets/images/frame-icon.svg" alt="Frame" class="component-icon small" />
+        <h4>Frame</h4>
+      </div>
+      <div class="component" data-component="chip">
+        <img src="assets/images/chip-icon.svg" alt="Chip" class="component-icon small" />
+        <h4>Chip</h4>
+      </div>
+    </section>
+
+    <!-- Middle: Tariff Dropdown & Info -->
+    <section class="tariff-box">
+      <label for="country-select">Origin Country:</label>
+      <select id="country-select">
+        <option value="" disabled selected>Select country</option>
+        <!-- add your country options here -->
+      </select>
+      <div class="tariff-info">
+        Component tariff rate (weighted average): 10%
+      </div>
+    </section>
+
+    <!-- Right: Shipping Box Progress -->
+    <section class="shipping-box">
+      <h4>Phone Assembly</h4>
+      <div class="progress-grid">
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
